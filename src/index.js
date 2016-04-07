@@ -1,2 +1,5 @@
-require('./styles/style.css');
-document.write(require('./content.js'));
+import React from 'react';
+import {render} from 'react-dom';
+import Content from './content';
+
+render(<Content />, document.getElementById('root'));

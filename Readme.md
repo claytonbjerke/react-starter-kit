@@ -1,10 +1,10 @@
 ## React Starter Kit
 
 ## TODO:
-- webpack   build automation
-- jest      testing framework
-- redux     state container
-- babel     js compiler
+- webpack   -> build automation
+- jest      -> testing framework
+- redux     -> state container
+- babel     -> js compiler
 
 ## References
 1. Babel plugins
