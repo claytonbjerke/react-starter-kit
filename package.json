@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server --progress",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -11,7 +12,8 @@
   "devDependencies": {
     "css-loader": "0.23.1",
     "style-loader": "0.13.1",
-    "webpack": "1.12.14"
+    "webpack": "1.12.14",
+    "webpack-dev-server": "1.14.1"
   },
   "dependencies": {
     "babel-core": "6.7.4",
