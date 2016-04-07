@@ -1,10 +1,10 @@
 ## React Starter Kit
 
 ## TODO:
-- webpack  -> build automation
-- jest     -> testing framework
-- redux    -> state container
-- babel    -> js compiler
+- webpack   build automation
+- jest      testing framework
+- redux     state container
+- babel     js compiler
 
 ## References
 1. Babel plugins
@@ -20,3 +20,5 @@
    - https://github.com/kriasoft/react-starter-kit/blob/master/docs/react-style-guide.md
 6. Webpack Reference
    - https://github.com/petehunt/webpack-howto
+7. Travis CI
+   - https://travis-ci.org/
