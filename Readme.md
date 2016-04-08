@@ -1,7 +1,6 @@
 ## React Starter Kit
 
 ## TODO:
-- jest      -> testing framework
 - redux     -> state container
 - react-router
 
