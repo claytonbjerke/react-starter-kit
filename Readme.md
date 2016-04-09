@@ -3,6 +3,7 @@
 ## TODO:
 - redux     -> state container
 - react-router
+- production server
 
 ## References
 1. Babel plugins
