@@ -2,10 +2,10 @@ import React from 'react';
 import {render} from 'react-dom';
 import {Router, Route, browserHistory, IndexRoute} from 'react-router';
 
-import App from './App';
-import Home from './Home';
-import About from './About';
-import References from './References';
+import App from './app/App';
+import Home from './home/Home';
+import About from './about/About';
+import References from './references/References';
 
 render((
   <Router history={browserHistory}>
