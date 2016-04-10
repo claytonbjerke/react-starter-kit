@@ -2,6 +2,8 @@ import React from 'react';
 import NavLink from './NavLink';
 import { IndexLink, Link } from 'react-router';
 
+import Footer from './Footer';
+
 export default React.createClass({
   render() {
     return (
@@ -13,6 +15,7 @@ export default React.createClass({
             <li><NavLink to="/references">References</NavLink></li>
           </ul>
           {this.props.children}
+          <Footer/>
         </div>
     );
   }

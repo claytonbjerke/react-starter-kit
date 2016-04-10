@@ -3,7 +3,6 @@ import React from 'react'
 import TodoList from './TodoList'
 import TodoHeader from './TodoHeader'
 import TodoTools from './TodoTools'
-import Footer from './Footer'
 
 export default class TodoApp extends React.Component{
 
@@ -26,7 +25,6 @@ export default class TodoApp extends React.Component{
           <TodoTools filter={this.props.filter}
             nbActiveItems={this.getNbActiveItems()} />
         </section>
-        <Footer />
       </div>
     );
   }
