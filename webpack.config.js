@@ -1,10 +1,15 @@
+var webpack = require('webpack');
 var path = require('path');
 
 module.exports = {
 
     devtool: 'cheap-source-map',
 
-    entry: __dirname + '/src/index.js',
+    entry: [
+        'webpack-dev-server/client?http://localhost:9000',
+        'webpack/hot/only-dev-server',
+        __dirname + '/src/index.js'
+    ],
 
     output: {
         path: __dirname + '/build',
@@ -12,19 +17,16 @@ module.exports = {
     },
 
     module: {
-        loaders: [
-            {
-                test: /\.css$/,
-                loader: 'style!css'
-            },
-            {
-                test: /\.js$/,
-                include: [
-                    path.resolve(__dirname, "src")
-                 ],
-                loader: 'babel'
-            }
-        ]
+        loaders: [{
+            test: /\.css$/,
+            loader: 'style!css'
+        }, {
+            test: /\.js$/,
+            include: [
+                path.resolve(__dirname, "src")
+            ],
+            loader: 'react-hot!babel'
+        }]
     },
 
     devServer: {
@@ -32,6 +34,11 @@ module.exports = {
         port: 9000,
         colors: true,
         historyApiFallback: true,
-        inline: true
-    }
+        inline: true,
+        hot: true
+    },
+
+    plugins: [
+        new webpack.HotModuleReplacementPlugin()
+    ]
 };

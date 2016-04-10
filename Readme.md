@@ -3,6 +3,10 @@
 ## TODO:
 - redux     -> state container
 - production server
+- server side rendering
+- example tests for components
+- React Hot Loader
+- Redux Devtools
 
 ## References
 1. Babel plugins
@@ -22,3 +26,8 @@
    - https://travis-ci.org/
 8. Webpack tutorial list
    - https://webpack.github.io/docs/list-of-tutorials.html
+9. React Directory Structure
+   - http://marmelab.com/blog/2015/12/17/react-directory-structure.html
+10. Getting Started With React, Redux, and Immutable
+   - http://www.theodo.fr/blog/2016/03/getting-started-with-react-redux-and-immutable-a-test-driven-tutorial-part-1/
+   - http://www.theodo.fr/blog/2016/03/getting-started-with-react-redux-and-immutable-a-test-driven-tutorial-part-2/

@@ -9,7 +9,7 @@ export default React.createClass({
           <h1>react-starter-kit</h1>
           <ul role="nav">
             <li><IndexLink to="/" activeClassName="active">Home</IndexLink></li>
-            <li><NavLink to="/about">About</NavLink></li>
+            <li><NavLink to="/todo">ToDo</NavLink></li>
             <li><NavLink to="/references">References</NavLink></li>
           </ul>
           {this.props.children}
