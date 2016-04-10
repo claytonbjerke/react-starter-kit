@@ -6,8 +6,8 @@ export default class TextInput extends React.Component {
 
   constructor(props) {
     super(props);
+    this.state = {value: props.text};
     this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
-    this.state = {value: this.props.text};
   }
 
   _handleKeyDown(e) {
@@ -15,12 +15,12 @@ export default class TextInput extends React.Component {
       case 'Enter':
         return this.props.doneEditing(this.props.itemId, this.state.value);
       case 'Escape':
-        return this.cancelEditing(this.props.itemId);
+        return this.cancelEditing();
     }
   }
 
   _handleOnBlur(e) {
-    return this.cancelEditing(this.props.itemId);
+    return this.cancelEditing();
   }
 
   _handleOnChange(e) {
@@ -37,11 +37,11 @@ export default class TextInput extends React.Component {
       <input className="edit"
                   autoFocus={true}
                   value={this.state.value}
-                  onChange={this._handleOnChange}
+                  onChange={this._handleOnChange.bind(this)}
                   type="text"
                   ref="itemInput"
-                  onKeyDown={this._handleKeyDown}
-                  onBlur={this._handleOnBlur}
+                  onKeyDown={this._handleKeyDown.bind(this)}
+                  onBlur={this._handleOnBlur.bind(this)}
                   />
     );
   }

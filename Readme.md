@@ -5,8 +5,6 @@
 - production server
 - server side rendering
 - example tests for components
-- React Hot Loader
-- Redux Devtools
 
 ## References
 1. Babel plugins
