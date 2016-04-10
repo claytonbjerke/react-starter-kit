@@ -1,8 +1,9 @@
 ## React Starter Kit
 
 ## TODO:
-- redux     -> state container
+- organize teh codez again
 - production server
+- deploy to heroku
 - server side rendering
 - example tests for components
 
@@ -29,3 +30,5 @@
 10. Getting Started With React, Redux, and Immutable
    - http://www.theodo.fr/blog/2016/03/getting-started-with-react-redux-and-immutable-a-test-driven-tutorial-part-1/
    - http://www.theodo.fr/blog/2016/03/getting-started-with-react-redux-and-immutable-a-test-driven-tutorial-part-2/
+11. React Router Redux
+   - https://github.com/reactjs/react-router-redux
