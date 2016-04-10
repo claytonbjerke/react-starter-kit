@@ -1,10 +1,11 @@
 import React from 'react'
+import {connect} from 'react-redux';
 
 import TodoList from './TodoList'
 import TodoHeader from './TodoHeader'
 import TodoTools from './TodoTools'
 
-export default class TodoApp extends React.Component{
+export class TodoApp extends React.Component{
 
   getNbActiveItems() {
     if (this.props.todos) {
@@ -29,3 +30,12 @@ export default class TodoApp extends React.Component{
     );
   }
 }
+
+function mapStateToProps(state) {
+  return {
+    todos: state.reducers.get('todos'),
+    filter: state.reducers.get('filter')
+  };
+}
+
+export const TodoAppContainer = connect(mapStateToProps)(TodoApp);
