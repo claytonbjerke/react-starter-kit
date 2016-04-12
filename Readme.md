@@ -1,5 +1,9 @@
 ## React Starter Kit
 
+## In Progress Demo:
+
+- https://react-starter-kit.herokuapp.com/
+
 ## TODO:
 - organize teh codez again
 - production server
@@ -7,7 +11,7 @@
 - server side rendering
 - example tests for components
 
-## References
+## References:
 1. Babel plugins
    - https://babeljs.io/docs/plugins/
 2. Jest React
