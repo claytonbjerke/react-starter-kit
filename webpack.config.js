@@ -1,9 +1,13 @@
+// bundle.js  1.39 MB       0  [emitted]  main
+// bundle.js.map  1.64 MB       0  [emitted]  main
 var webpack = require('webpack');
 var path = require('path');
 
+const DEBUG = false//!process.argv.includes('--release');
+
 module.exports = {
 
-    devtool: 'cheap-source-map',
+    devtool: DEBUG ? 'cheap-source-map' : false,
 
     entry: [
         'webpack-dev-server/client?http://localhost:9000',
@@ -12,7 +16,7 @@ module.exports = {
     ],
 
     output: {
-        path: __dirname + '/build',
+        path: __dirname + '/dist',
         filename: 'bundle.js'
     },
 

@@ -23,7 +23,7 @@ const createStoreDevTools = compose(
 const store = createStoreDevTools(reducer);
 
 store.dispatch({
-  type: 'SET_STATE',
+  type: 'SET_STATE', 
   state: {
     todos: [
       {id: 1, text: 'React', status: 'active', editing: false},
