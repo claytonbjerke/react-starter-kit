@@ -12,6 +12,7 @@
   "devDependencies": {
     "babel-eslint": "6.0.2",
     "babel-jest": "^9.0.0",
+    "babel-preset-stage-1": "^6.5.0",
     "babel-preset-stage-2": "^6.5.0",
     "css-loader": "0.23.1",
     "eslint": "2.7.0",

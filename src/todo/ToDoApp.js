@@ -36,8 +36,8 @@ export class TodoApp extends React.Component{
 
 function mapStateToProps(state) {
   return {
-    todos: state.reducers.get('todos'),
-    filter: state.reducers.get('filter')
+    todos: state.todoReducer.get('todos'),
+    filter: state.todoReducer.get('filter')
   };
 }
 

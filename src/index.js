@@ -5,15 +5,15 @@ import {Provider} from 'react-redux';
 import {Router, Route, browserHistory, IndexRoute} from 'react-router';
 import { syncHistoryWithStore, routerReducer } from 'react-router-redux';
 
-import reducers from './app/reducers';
-
+import * as reducers from './app/reducers';
+//import reducers from './todo/ToDoReducer'
 import App from './app/App';
 import Home from './home/Home';
 import References from './references/References';
 import ToDo from './todo/ToDo';
 
 const reducer = combineReducers({
-  reducers,
+  ...reducers,
   routing: routerReducer
 })
 
@@ -23,7 +23,7 @@ const createStoreDevTools = compose(
 const store = createStoreDevTools(reducer);
 
 store.dispatch({
-  type: 'SET_STATE', 
+  type: 'SET_STATE',
   state: {
     todos: [
       {id: 1, text: 'React', status: 'active', editing: false},
