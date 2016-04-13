@@ -7,7 +7,6 @@
 ## TODO:
 - organize teh codez again
 - production server
-- deploy to heroku
 - server side rendering
 - example tests for components
 
